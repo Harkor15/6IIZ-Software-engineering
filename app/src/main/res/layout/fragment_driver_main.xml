@@ -31,7 +31,7 @@
             android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cm_restaurantInfo"
+                android:id="@+id/drm_stats"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -66,7 +66,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cm_menu"
+                android:id="@+id/drm_notification_planel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -78,7 +78,7 @@
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cm_restaurantInfo">
+                app:layout_constraintTop_toBottomOf="@+id/drm_stats">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -102,7 +102,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/cm_subscriptions"
+                android:id="@+id/drm_messages"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -114,7 +114,7 @@
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cm_menu">
+                app:layout_constraintTop_toBottomOf="@+id/drm_notification_planel">
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -149,7 +149,7 @@
                 android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cm_subscriptions">
+                app:layout_constraintTop_toBottomOf="@+id/drm_messages">
 
                 <ImageView
                     android:id="@+id/imageView4"

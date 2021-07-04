@@ -7,7 +7,7 @@
     tools:context=".views.driver.driver_notification_panel.DriverNotificationPanel">
 
     <Button
-        android:id="@+id/csu_button_back"
+        android:id="@+id/dnp_button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

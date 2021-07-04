@@ -30,14 +30,8 @@
         android:label="fragment_dispatcher_main"
         tools:layout="@layout/fragment_dispatcher_main" >
         <action
-            android:id="@+id/action_dispatcherMainFragment_to_dispatcherDataExport4"
+            android:id="@+id/action_dispatcherMainFragment_to_dispatcherDataExport"
             app:destination="@id/dispatcherDataExport4" />
-        <action
-            android:id="@+id/action_dispatcherMainFragment_to_dispatcherDriverDetails2"
-            app:destination="@id/dispatcherDriverDetails2" />
-        <action
-            android:id="@+id/action_dispatcherMainFragment_to_dispatcherVehicleDetails"
-            app:destination="@id/dispatcherVehicleDetails" />
         <action
             android:id="@+id/action_dispatcherMainFragment_to_dispatcherDriversList"
             app:destination="@id/dispatcherDriversList" />
@@ -94,7 +88,14 @@
         android:id="@+id/dispatcherDriversList"
         android:name="com.example.softwareengineering.views.dispatcher.dispatcher_drivers_list.DispatcherDriversList"
         android:label="fragment_dispatcher_drivers_list"
-        tools:layout="@layout/fragment_dispatcher_drivers_list" />
+        tools:layout="@layout/fragment_dispatcher_drivers_list" >
+        <action
+            android:id="@+id/action_dispatcherDriversList_to_dispatcherDriverDetails2"
+            app:destination="@id/dispatcherDriverDetails2" />
+        <action
+            android:id="@+id/action_dispatcherDriversList_to_dispatcherVehicleDetails"
+            app:destination="@id/dispatcherVehicleDetails" />
+    </fragment>
     <fragment
         android:id="@+id/dispatcherDataExport4"
         android:name="com.example.softwareengineering.views.dispatcher.dispatcher_data_export.DispatcherDataExport"

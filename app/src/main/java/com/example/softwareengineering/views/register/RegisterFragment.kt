@@ -23,7 +23,6 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.registerButton)?.setOnClickListener {
-            //activity?.supportFragmentManager?.popBackStack()
             activity?.onBackPressed()
         }
     }

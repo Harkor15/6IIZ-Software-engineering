@@ -12,7 +12,7 @@ class DriverMessagesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.rmess_button_back).setOnClickListener {
+        view.findViewById<Button>(R.id.dmf_button_back).setOnClickListener {
             activity?.onBackPressed()
         }
     }

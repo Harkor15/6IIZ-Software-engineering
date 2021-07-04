@@ -20,23 +20,14 @@ class DriverMainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val navController = Navigation.findNavController(view)
-        view.findViewById<ConstraintLayout>(R.id.cm_restaurantInfo).setOnClickListener {
-            navController.navigate(R.id.action_clientMain_to_clientRestaurantDetails)
+        view.findViewById<ConstraintLayout>(R.id.drm_stats).setOnClickListener {
+            navController.navigate(R.id.action_driverMainFragment_to_driverStats)
         }
-        view.findViewById<ConstraintLayout>(R.id.cm_menu).setOnClickListener {
-            navController.navigate(R.id.action_clientMain_to_clientMenuFragment)
+        view.findViewById<ConstraintLayout>(R.id.drm_notification_planel).setOnClickListener {
+            navController.navigate(R.id.action_driverMainFragment_to_driverNotificationPanel)
         }
-        view.findViewById<ConstraintLayout>(R.id.cm_subscriptions).setOnClickListener {
-            navController.navigate(R.id.action_clientMain_to_clientSubscriptionFragment)
-        }
-        view.findViewById<ConstraintLayout>(R.id.cm_history).setOnClickListener {
-            navController.navigate(R.id.action_clientMain_to_clientHistoryFragment)
-        }
-        view.findViewById<ConstraintLayout>(R.id.cm_Messages).setOnClickListener {
-            navController.navigate(R.id.action_clientMain_to_clientMessagesFragment)
-        }
-        view.findViewById<ConstraintLayout>(R.id.cm_settings).setOnClickListener {
-            navController.navigate(R.id.action_clientMain_to_clientSettingsFragment)
+        view.findViewById<ConstraintLayout>(R.id.drm_messages).setOnClickListener {
+            navController.navigate(R.id.action_driverMainFragment_to_driverMessagesFragment)
         }
     }
 

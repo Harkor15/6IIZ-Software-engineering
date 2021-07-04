@@ -79,12 +79,12 @@
         android:text="@string/messages"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/rmess_button_back"
+        app:layout_constraintBottom_toBottomOf="@+id/dmf_button_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rmess_button_back"
+        android:id="@+id/dmf_button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

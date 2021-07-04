@@ -13,7 +13,7 @@ DispatcherDataExport : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.rsub_button_back).setOnClickListener {
+        view.findViewById<Button>(R.id.dde_button_back).setOnClickListener {
             activity?.onBackPressed()
         }
     }

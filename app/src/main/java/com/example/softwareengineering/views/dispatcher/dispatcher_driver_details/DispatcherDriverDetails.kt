@@ -12,7 +12,7 @@ class DispatcherDriverDetails : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.oh_button_back).setOnClickListener {
+        view.findViewById<Button>(R.id.ddd_button_back).setOnClickListener {
             activity?.onBackPressed()
         }
     }

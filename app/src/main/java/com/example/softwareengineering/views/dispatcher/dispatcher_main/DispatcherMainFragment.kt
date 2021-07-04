@@ -20,23 +20,14 @@ class DispatcherMainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val navController = Navigation.findNavController(view)
-        view.findViewById<ConstraintLayout>(R.id.rm_restaurantInfo).setOnClickListener {
-            navController.navigate(R.id.action_restaurantMain_to_restaurantDetailsFragment)
+        view.findViewById<ConstraintLayout>(R.id.dm_driversList).setOnClickListener {
+            navController.navigate(R.id.action_dispatcherMainFragment_to_dispatcherDriversList)
         }
-        view.findViewById<ConstraintLayout>(R.id.rm_menu).setOnClickListener {
-            navController.navigate(R.id.action_restaurantMain_to_restaurantMenu)
+        view.findViewById<ConstraintLayout>(R.id.dm_dataExport).setOnClickListener {
+            navController.navigate(R.id.action_dispatcherMainFragment_to_dispatcherDataExport)
         }
-        view.findViewById<ConstraintLayout>(R.id.rm_subscriptions).setOnClickListener {
-            navController.navigate(R.id.action_restaurantMain_to_restaurantSubscriptionsFragment)
-        }
-        view.findViewById<ConstraintLayout>(R.id.rm_history).setOnClickListener {
-            navController.navigate(R.id.action_restaurantMain_to_restaurantHistoryFragment)
-        }
-        view.findViewById<ConstraintLayout>(R.id.rm_todayOrders).setOnClickListener {
-            navController.navigate(R.id.action_restaurantMain_to_restaurantTodayOrdersFragment)
-        }
-        view.findViewById<ConstraintLayout>(R.id.rm_messages).setOnClickListener {
-            navController.navigate(R.id.action_restaurantMain_to_restaurantMessagesFragment)
+        view.findViewById<ConstraintLayout>(R.id.dm_messages).setOnClickListener {
+            navController.navigate(R.id.action_dispatcherMainFragment_to_dispatcherMessagesFragment)
         }
         super.onViewCreated(view, savedInstanceState)
     }

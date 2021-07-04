@@ -20,9 +20,7 @@ class AuthenticationFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d(TAG, "Auth fragment on create")
-        val view: View = inflater.inflate(R.layout.fragment_authentication, container, false)
-        return view
+        return inflater.inflate(R.layout.fragment_authentication, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -34,13 +32,11 @@ class AuthenticationFragment : Fragment() {
             if(login.isEmpty()||password.isEmpty()){
                 view.findViewById<TextView>(R.id.a_wrong_login_details).visibility=View.VISIBLE
             }else{
-                if(login.first() == 'r' || login.first()=='R'){
-                    navController.navigate(R.id.action_authenticationFragment_to_restaurantMain)
+                if(login.first() == 'k' || login.first()=='K'){
+                    navController.navigate(R.id.action_authenticationFragment_to_driverMainFragment)
                 }else{
-                    if(login[0]=='n'||login[0]=='N')
-                        navController.navigate(R.id.action_authenticationFragment_to_newClientMainFragment)
-                    else
-                        navController.navigate(R.id.action_authenticationFragment_to_clientMain)
+                    navController.navigate(R.id.action_authenticationFragment_to_dispatcherMainFragment)
+
                 }
             }
         }
