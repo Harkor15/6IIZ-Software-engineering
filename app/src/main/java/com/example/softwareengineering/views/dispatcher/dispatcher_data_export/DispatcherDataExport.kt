@@ -1,4 +1,4 @@
-package com.example.softwareengineering.views.dispatcher.restaurant_history
+package com.example.softwareengineering.views.dispatcher.dispatcher_data_export
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +8,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import com.example.softwareengineering.R
 
-class RestaurantHistoryFragment : Fragment() {
+class
+DispatcherDataExport : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.oh_button_back).setOnClickListener {
+        view.findViewById<Button>(R.id.rsub_button_back).setOnClickListener {
             activity?.onBackPressed()
         }
     }
@@ -22,7 +23,7 @@ class RestaurantHistoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_restaurant_history, container, false)
+        return inflater.inflate(R.layout.fragment_dispatcher_data_export, container, false)
     }
 
 

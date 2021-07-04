@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authenticationFragment">
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.example.softwareengineering.views.authentication.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" >
+        <action
+            android:id="@+id/action_authenticationFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_dispatcherMainFragment"
+            app:destination="@id/dispatcherMainFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_driverMainFragment"
+            app:destination="@id/driverMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dispatcherDriverDetails2"
+        android:name="com.example.softwareengineering.views.dispatcher.dispatcher_driver_details.DispatcherDriverDetails"
+        android:label="fragment_dispatcher_driver_details"
+        tools:layout="@layout/fragment_dispatcher_driver_details" />
+    <fragment
+        android:id="@+id/dispatcherMainFragment"
+        android:name="com.example.softwareengineering.views.dispatcher.dispatcher_main.DispatcherMainFragment"
+        android:label="fragment_dispatcher_main"
+        tools:layout="@layout/fragment_dispatcher_main" >
+        <action
+            android:id="@+id/action_dispatcherMainFragment_to_dispatcherDataExport4"
+            app:destination="@id/dispatcherDataExport4" />
+        <action
+            android:id="@+id/action_dispatcherMainFragment_to_dispatcherDriverDetails2"
+            app:destination="@id/dispatcherDriverDetails2" />
+        <action
+            android:id="@+id/action_dispatcherMainFragment_to_dispatcherVehicleDetails"
+            app:destination="@id/dispatcherVehicleDetails" />
+        <action
+            android:id="@+id/action_dispatcherMainFragment_to_dispatcherDriversList"
+            app:destination="@id/dispatcherDriversList" />
+        <action
+            android:id="@+id/action_dispatcherMainFragment_to_dispatcherMessagesFragment"
+            app:destination="@id/dispatcherMessagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dispatcherMessagesFragment"
+        android:name="com.example.softwareengineering.views.dispatcher.dispatcher_messages.DispatcherMessagesFragment"
+        android:label="fragment_dispatcher_messages"
+        tools:layout="@layout/fragment_dispatcher_messages" />
+    <fragment
+        android:id="@+id/dispatcherVehicleDetails"
+        android:name="com.example.softwareengineering.views.dispatcher.dispatcher_vehicle_details.DispatcherVehicleDetails"
+        android:label="fragment_dispatcher_vehicle_details"
+        tools:layout="@layout/fragment_dispatcher_vehicle_details" />
+    <fragment
+        android:id="@+id/driverMainFragment"
+        android:name="com.example.softwareengineering.views.driver.driver_main.DriverMainFragment"
+        android:label="fragment_driver_main"
+        tools:layout="@layout/fragment_driver_main" >
+        <action
+            android:id="@+id/action_driverMainFragment_to_driverNotificationPanel"
+            app:destination="@id/driverNotificationPanel" />
+        <action
+            android:id="@+id/action_driverMainFragment_to_driverMessagesFragment"
+            app:destination="@id/driverMessagesFragment" />
+        <action
+            android:id="@+id/action_driverMainFragment_to_driverStats"
+            app:destination="@id/driverStats" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverMessagesFragment"
+        android:name="com.example.softwareengineering.views.driver.driver_messages.DriverMessagesFragment"
+        android:label="fragment_driver_messages"
+        tools:layout="@layout/fragment_driver_messages" />
+    <fragment
+        android:id="@+id/driverNotificationPanel"
+        android:name="com.example.softwareengineering.views.driver.driver_notification_panel.DriverNotificationPanel"
+        android:label="fragment_driver_notification"
+        tools:layout="@layout/fragment_driver_notification" />
+    <fragment
+        android:id="@+id/driverStats"
+        android:name="com.example.softwareengineering.views.driver.driver_stats.DriverStats"
+        android:label="fragment_driver_stats"
+        tools:layout="@layout/fragment_driver_stats" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.softwareengineering.views.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/dispatcherDriversList"
+        android:name="com.example.softwareengineering.views.dispatcher.dispatcher_drivers_list.DispatcherDriversList"
+        android:label="fragment_dispatcher_drivers_list"
+        tools:layout="@layout/fragment_dispatcher_drivers_list" />
+    <fragment
+        android:id="@+id/dispatcherDataExport4"
+        android:name="com.example.softwareengineering.views.dispatcher.dispatcher_data_export.DispatcherDataExport"
+        android:label="fragment_dispatcher_data_export"
+        tools:layout="@layout/fragment_dispatcher_data_export" />
+</navigation>
