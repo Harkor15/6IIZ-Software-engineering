@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:background="@drawable/button"
-            android:text="@string/login"
+            android:text="ZALOGUJ"
             app:layout_constraintBottom_toBottomOf="@+id/a_createNewAccountButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/a_createNewAccountButton" />
